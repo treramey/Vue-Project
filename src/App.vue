@@ -1,18 +1,26 @@
 <template>
   <div id="app">
-
+    <NavComponent></NavComponent>
   </div>
 </template>
 
 <script>
 
+import NavComponent from './components/NavComponent'
+
 
 export default {
-  name: 'app',
+  components: {NavComponent}
   
 }
 </script>
 
 <style lang="scss">
-
+#app
+  {
+    min-height: 100%;
+    padding: 1.5rem;
+    background-color: $color-secondary;
+  }
 </style>
+

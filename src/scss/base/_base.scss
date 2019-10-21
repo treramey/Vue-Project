@@ -1,0 +1,27 @@
+// Normalization
+*, *::after, *::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+html 
+{
+    height: 100%;
+    font-size: 62.5%;
+    @media only screen and (max-width: 56.25em)
+    {
+        font-size: 55%;
+    }
+
+    @media only screen and (max-width: 37.5em)
+    {
+        font-size: 50%;
+    }
+} 
+
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
