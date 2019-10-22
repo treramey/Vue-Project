@@ -1,14 +1,21 @@
 
 //<-------------colors--------------->
-$color-primary: #8796a5; // #36A9E1
-$color-primary-dark: #788592; // #34a1d8
-$color-primary-dark-2: #6c7783; // #3095c7
+$color-primary: #2f2f2f; // #36A9E1
+$color-primary-dark: #323232; // #34a1d8
+$color-primary-dark-2: #2e2e2e; // #3095c7
 $color-secondary: #22262a;
 
-$color-gray-light: #6e7b88;
+$color-gray-light: #7a7a7a;
 
 $color-white: #fff;
 $color-black: #000;
+
+$color-linkedin:#0077ba;
+$color-github:#2b3137;
+$color-email:#6FC2B0;
+$color-resume:#aaa9ad;
+
+
 
 //<-------------fonts--------------->
 $font-primary: Staatliches, sans-serif;
@@ -25,3 +32,4 @@ $cubic-bezier-primary: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 //<-------------Layers--------------->
 $layer-nav:900;
 $layer-burger:1000;
+$layer-contact:800;

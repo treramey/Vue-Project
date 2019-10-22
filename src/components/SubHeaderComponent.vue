@@ -14,7 +14,7 @@ export default {
     .sub-header{
         font-family: $font-secondary;
         font-size: 1.6rem;
-        color: $color-primary;
+        color: $color-gray-light;
         display: inline-block;
         margin: 1.2rem 0;
         line-height: 1.5;

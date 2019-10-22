@@ -1,14 +1,16 @@
 <template>
   <div id="app">
     <NavComponent/>
+    <contact/>
     <router-view/>
   </div>
 </template>
 <script>
 import NavComponent from "./components/NavComponent"
+import Contact from './components/Contact'
 
 export default {
-  components:{NavComponent}  
+  components:{NavComponent,Contact}  
 }
 </script>
 <style lang="scss">
