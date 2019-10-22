@@ -10,15 +10,15 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <router-link to="/about" class="navigation__link">
             <span>About</span>
-          </a>
+          </router-link>
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">
+          <router-link to="/portfolio" class="navigation__link">
             <span>Portfolio</span>
-          </a>
+          </router-link>
         </li>
       </ul>
     </nav>
