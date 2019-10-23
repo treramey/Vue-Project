@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import ProjectsComponent from "../components/ProjectsComponent";
-import HeaderComponent from "../components/HeaderComponent";
-import SubHeaderComponent from "../components/SubHeaderComponent";
+import ProjectsComponent from "../components/Projects/ProjectCompent";
+import HeaderComponent from "../components/Projects/HeaderComponent";
+import SubHeaderComponent from "../components/Projects/SubHeaderComponent";
 
 export default {
   components: { ProjectsComponent, HeaderComponent, SubHeaderComponent }
