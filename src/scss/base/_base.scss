@@ -38,6 +38,7 @@ html
 body {
     box-sizing: border-box;
     height: 100%;
+    overflow-x: hidden;
 }
 
 main {
@@ -57,4 +58,23 @@ main {
     {
         width: 120rem
     }
+}
+// Scroll
+::-webkit-scrollbar-track
+{
+	border-radius: 12px;
+	background-color: $color-footer;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+    background-color: $color-footer;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 12px;
+	background-color: $color-scroll;
 }

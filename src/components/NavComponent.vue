@@ -127,7 +127,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 400ms ease-out;
+    transition: all 300ms ease-out;
   }
   //display navbar menu
   &__checkbox:checked ~ &__nav {

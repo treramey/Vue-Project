@@ -28,6 +28,8 @@ export default {};
     flex-direction: row;
     @media only screen and (max-width: 50em) {
       flex-direction: column;
+      margin-right: 0;
+      margin-bottom: 1rem;
     }
   }
   &__name{
