@@ -1,18 +1,18 @@
 <template>
   <div class="row portfolio">
-    <ProjectComponent img="movieapp01233.png"/>
-    <ProjectComponent img="weather-app.png"/>
+    <ProjectGrid img="movieapp01233.png"/>
+    <ProjectGrid img="weather-app.png"/>
   </div>
 </template>
 
 <script>
 
 
-import ProjectComponent from './ProjectCompent'
+import ProjectGrid from './ProjectGrid'
 
 
 export default {
-  components:{ProjectComponent}
+  components:{ProjectGrid}
 }
 </script>
 

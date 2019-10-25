@@ -21,6 +21,7 @@ export default {
     width:16rem;
     text-decoration: none;
     overflow: hidden;
+    
 
     *{
         transition: all 150ms;
@@ -28,22 +29,22 @@ export default {
         width: 100%;
         height: 4.5rem;
         line-height: 1;
-        font-size: 2rem;
+        font-size: 2.5rem;
         border:2px solid $color-white;
-        background-color: $color-secondary;
-        color:$color-white;
+        background-color: $color-white;
+        color:$color-secondary;
         font-family: $font-primary;
-        
+        border-radius: 6px;
     }
     
     &__bottom{
         margin-top: 1rem;
-        background-color: $color-white;
-        color:$color-secondary;
+        background-color: $color-secondary;
+        color:$color-white;
     }
 
     &:hover * {
-        transform: translateY(-5rem);
+        transform: translateY(-5.5rem);
         cursor:pointer;
     }
 }

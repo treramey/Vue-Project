@@ -63,6 +63,7 @@ export default {
             bottom: 1.5rem;
             left: 50%;
             transform: translateX(-50%);
+            width: 100%;
         }
         &__button
         {

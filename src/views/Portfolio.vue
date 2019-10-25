@@ -1,17 +1,17 @@
 <template>
   <main>
-    <HeaderComponent>Portfolio</HeaderComponent>
-    <SubHeaderComponent>Have a look at some of my latest work!</SubHeaderComponent>
+    <ProjectHeader>Portfolio</ProjectHeader>
+    <ProjectSubHeader>Have a look at some of my latest work!</ProjectSubHeader>
     <ProjectsComponent></ProjectsComponent>
   </main>
 </template>
 
 <script>
-import ProjectsComponent from "../components/Projects/ProjectCompent";
-import HeaderComponent from "../components/Projects/HeaderComponent";
-import SubHeaderComponent from "../components/Projects/SubHeaderComponent";
+import ProjectsComponent from "../components/Projects/ProjectsComponent";
+import ProjectHeader from "../components/Projects/ProjectHeader";
+import ProjectSubHeader from "../components/Projects/ProjectSubHeader";
 
 export default {
-  components: { ProjectsComponent, HeaderComponent, SubHeaderComponent }
+  components: { ProjectsComponent, ProjectHeader, ProjectSubHeader }
 };
 </script>

@@ -45,6 +45,10 @@ export default {
   line-height: 1;
   font-size: 3rem;
   display: block;
+  @media only screen and (max-width: 44.375em)
+  {
+    font-size: 2rem;
+  }
 
   &__word {
     display: inline-block;
@@ -52,6 +56,11 @@ export default {
     margin: 0 0.5rem;
     height: 4rem;
     overflow: hidden;
+    @media only screen and (max-width: 44.375em)
+    {
+      height: 2.5rem;
+      margin: 0 0.3rem;
+    }
 
     * {
       transition: all 250ms;
@@ -60,17 +69,22 @@ export default {
       visibility: hidden;
     }
     &--active * {
-      transform: translateY(-3.6rem);
+      transform: translateY(-4rem);
+      @media only screen and (max-width: 44.375em)
+      {
+        transform: translateY(-3rem);
+      }
     }
     &--active &__bottom {
       visibility: visible;
     }
   }
   &__top {
-    margin-bottom: 0.6rem;
+    margin-bottom: 1.05rem;
   }
   &__bottom {
-    color: $color-primary-text-dark-2;
+    color: #22262a;
+    background-color: $color-white;
   }
 }
 </style>

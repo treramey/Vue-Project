@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="nav_toggle" />
+    <input type="checkbox" class="navigation__checkbox" id="nav_toggle" v-model="navActive" />
     <label for="nav_toggle" class="navigation__button">
       <div class="navigation__line"></div>
       <div class="navigation__line"></div>
@@ -9,13 +9,13 @@
 
     <nav class="navigation__nav">
       <ul class="navigation__list">
-        <li class="navigation__item">
+        <li class="navigation__item" @click="navActive= false">
           <router-link to="/about" class="navigation__link">
             <span>About</span>
           </router-link>
         </li>
 
-        <li class="navigation__item">
+        <li class="navigation__item" @click="navActive= false">
           <router-link to="/portfolio" class="navigation__link">
             <span>Portfolio</span>
           </router-link>
@@ -26,7 +26,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      navActive: false
+    };
+  }
+};
 </script>
 
 <style lang='scss'>
@@ -41,15 +47,18 @@ export default {};
     top: 3rem;
     right: 4rem;
     z-index: $layer-burger;
-    width: 3.5rem;
+    width: 4.2rem;
     cursor: pointer;
+    @media only screen and (min-width: 1600px) {
+      width: 4.6rem;
+    }
   }
 
   &__line {
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: $color-gray-light;
+    background-color: $color-primary-text;
     transition: all 300ms $cubic-bezier-primary, background-color 300ms ease-in;
     vertical-align: middle;
     margin: auto;
@@ -57,6 +66,9 @@ export default {};
     &:nth-child(1),
     &:nth-child(3) {
       transform-origin: 5.5% 50%;
+      @media only screen and (min-width: 100em) {
+        transform-origin: 10.5% 50%;
+      }
     }
   }
   // Button Hover Animation
@@ -82,7 +94,7 @@ export default {};
 
   &__checkbox:checked + &__button &__line {
     background-color: $color-white;
-    transition: background-color 300ms ease-out;
+    transition: all 300ms $cubic-bezier-primary, background-color 300ms ease-out;
   }
 
   //Trransform into X
@@ -115,7 +127,7 @@ export default {};
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: all 300ms ease-out;
+    transition: all 400ms ease-out;
   }
   //display navbar menu
   &__checkbox:checked ~ &__nav {
@@ -124,13 +136,26 @@ export default {};
   //remove list styling
   &__list {
     list-style: none;
+    width: 60rem;
+    margin: auto;
+    @media only screen and (max-width: 31.25em){
+      width: 80%;
+      }
+    @media only screen and (min-width: 100em){
+      width: 80rem;
+      }
+        
   }
+
+  &__item {
+    width: 100%;
+    }
 
   &__link {
     &:visited,
     &:link {
       display: block;
-      width: 60rem;
+      width: 100%;
       padding: 2.5rem 0;
       text-align: center;
       font-size: 3.5rem;
@@ -144,7 +169,7 @@ export default {};
     span {
       position: relative;
     }
-    //Highlight Box 
+    //Highlight Box
     &::before {
       content: "";
       position: absolute;

@@ -1,8 +1,7 @@
 <template>
     <main class="about">
-        <AboutHeader>Hello, my name is Trevor Ramey. </AboutHeader>
-        <AboutSubHeader :text="'I\'m a software developer and designer.'"/>
-        <AboutSubHeader :text="'Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn.'"/>
+        <AboutHeader><span>Hello, I'm </span><span>Trevor</span>  </AboutHeader>
+        <AboutSubHeader :text="'I\'m a software developer and designer. Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn.'"/>
         <AboutButton>View Projects</AboutButton>
     </main>
 </template>
@@ -22,6 +21,15 @@ components:{ AboutButton, AboutSubHeader, AboutHeader}
         @include absoluteCenter;
         width:86rem;
         text-align: center;
+
+        @media only screen and (max-width: 62.5em)
+        {
+          width: 85%;
+        }
+        @media only screen and (max-width: 44.375em)
+        {
+          width: 75%;
+        }
     }
 
 </style>

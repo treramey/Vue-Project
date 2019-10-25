@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <NavComponent/>
-    <contact/>
-    <router-view/>
+    <NavComponent />
+    <contact />
+    <router-view />
+    <Footer/>
   </div>
 </template>
 <script>
-import NavComponent from "./components/NavComponent"
-import Contact from './components/Contact'
+import NavComponent from "./components/NavComponent";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default {
-  components:{NavComponent,Contact}  
-}
+  components: { NavComponent, Contact, Footer }
+};
 </script>
 <style lang="scss">
 #app {
-    min-height: 100%;
-    padding: 1.5rem;
-    background-color: $color-secondary;
-    user-select: none;
+  min-height: 100%;
+  padding: 1.5rem;
+  background-color: $color-secondary;
+  user-select: none;
 }
 </style>
