@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss">
     .header{
-        margin-top: 4rem;
-        font-size:4rem;
+        margin-top: 2rem;
+        font-size:5rem;
         color:$color-white;
         letter-spacing: 2px;
         user-select: text;

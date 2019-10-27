@@ -11,13 +11,19 @@
       <ul class="navigation__list">
         <li class="navigation__item" @click="navActive= false">
           <router-link to="/about" class="navigation__link">
-            <span>About</span>
+            <span>about</span>
           </router-link>
         </li>
 
         <li class="navigation__item" @click="navActive= false">
           <router-link to="/portfolio" class="navigation__link">
-            <span>Portfolio</span>
+            <span>portfolio</span>
+          </router-link>
+        </li>
+
+        <li class="navigation__item" @click="navActive= false">
+          <router-link to="/portfolio" class="navigation__link">
+            <span>contact</span>
           </router-link>
         </li>
       </ul>
@@ -47,7 +53,7 @@ export default {
     top: 3rem;
     right: 4rem;
     z-index: $layer-burger;
-    width: 4.2rem;
+    width: 4.1rem;
     cursor: pointer;
     @media only screen and (min-width: 1600px) {
       width: 4.6rem;
@@ -156,11 +162,11 @@ export default {
     &:link {
       display: block;
       width: 100%;
-      padding: 2.5rem 0;
+      padding: 4.5rem 0;
       text-align: center;
       font-size: 3.5rem;
       text-decoration: none;
-      color: $color-white;
+      color: $color-text-nav;
       text-transform: uppercase;
       position: relative;
       background: $color-primary-dark;
@@ -187,10 +193,12 @@ export default {
     &:active,
     &:focus {
       text-decoration: none;
+      color: $color-text-nav-light;
 
       &:before {
         transition: all 300ms $cubic-bezier-primary;
         transform: scaleX(1);
+        
       }
     }
   }

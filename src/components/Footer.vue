@@ -22,6 +22,7 @@ export default {};
   color: $color-white;
   font-size: 1.6rem;
   font-family: $font-secondary;
+  user-select: text;  
 
   &__item {
     display: flex;

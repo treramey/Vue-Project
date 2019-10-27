@@ -1,29 +1,26 @@
 <template>
   <div class="contact">
     <ul class="contact__list">
-      <li class="contact__text">
-        <div>Follow Me</div>
-      </li>
       <li class="contact__item">
-        <a href class="contact__link contact__link-linkedin">
+        <a href="https://www.linkedin.com/in/treramey/" target="_blank" class="contact__link contact__link-linkedin">
           <span class="contact__label">Linkedin</span>
           <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
       </li>
       <li class="contact__item">
-        <a href class="contact__link contact__link-github">
+        <a href="https://github.com/treramey" target="_blank" class="contact__link contact__link-github">
           <span class="contact__label">Github</span>
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
       </li>
       <li class="contact__item">
-        <a href class="contact__link contact__link-resume">
+        <a href="" target="_blank" class="contact__link contact__link-resume">
           <span class="contact__label">Resume</span>
           <font-awesome-icon :icon="['fas', 'portrait']" />
         </a>
       </li>
       <li class="contact__item">
-        <a href class="contact__link contact__link-email">
+        <a href="" target="_blank" class="contact__link contact__link-email">
           <span class="contact__label">Email</span>
           <font-awesome-icon :icon="['far', 'envelope']" />
         </a>
@@ -105,14 +102,5 @@ export default {};
     }
   }
 
-  &__text {
-    position: absolute;
-    top: -17px;
-    left: -6px;
-    width: 100%;
-    text-align: right;
-    color: #7a7a7a;
-    font-weight: 600;
-  }
 }
 </style>

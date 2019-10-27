@@ -1,5 +1,5 @@
 <template>
-  <div class="col-1-of-2 project">
+  <div class="project">
       <img class="project__img" :src="'/img/' + img" alt="Project Image">
         <div class="project__overlay">
             <div class="project__buttons">
