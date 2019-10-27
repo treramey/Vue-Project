@@ -29,9 +29,9 @@ export default {
 <style lang="scss">
   .row.portfolio {
     margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 4rem;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
   }
   .slide-left{
         opacity: 0;

@@ -27,8 +27,11 @@ export default {
 
 .project{
         position: relative;
+        flex: 1 0 40%;
+        border-radius: 7px;
         overflow: hidden;
-        box-shadow: 0 0 10px $color-black;
+        margin: 2rem;
+        box-shadow: 5px 5px 11px #121212;
         opacity: 1;
         transition: all 300ms ease-out;
         visibility: visible;
