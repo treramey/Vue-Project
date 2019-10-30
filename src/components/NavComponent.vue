@@ -51,7 +51,7 @@ export default {
   &__button {
     position: fixed;
     top: 3rem;
-    right: 4rem;
+    right: 3rem;
     z-index: $layer-burger;
     width: 4.1rem;
     cursor: pointer;
@@ -110,6 +110,7 @@ export default {
     transform: translateX(-100%);
     opacity: 0;
     visibility: hidden;
+    
   }
   //Rotate 45 degrees
   &__checkbox:checked + &__button &__line:nth-child(1) {

@@ -40,7 +40,7 @@ export default {
     &__bottom{
         margin-top: 1rem;
         background-color: $color-secondary;
-        color:$color-white;
+        color:#e53332;
     }
 
     &:hover * {

@@ -19,11 +19,12 @@ export default {
 </script>
 <style lang="scss">
 #app {
-  position: relative;
+  position: absolute;
   min-height: 100vh;
   min-width: 100vw;
   padding: 1.5rem;
   background-color: $color-secondary;
   user-select: none;
+  
 }
 </style>

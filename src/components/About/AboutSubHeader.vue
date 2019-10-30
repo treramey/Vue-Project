@@ -54,7 +54,7 @@ export default {
     display: inline-block;
     vertical-align: top;
     margin: 0 0.5rem;
-    height: 4rem;
+    height: 3.9rem;
     overflow: hidden;
     @media only screen and (max-width: 44.375em)
     {

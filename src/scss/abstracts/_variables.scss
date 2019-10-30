@@ -11,6 +11,7 @@ $color-secondary: #272727;
 $color-primary-text:#8796a5;;
 $color-text-nav:#636364;;
 $color-text-nav-light:#9f9f9f;
+$color-button: #e53332;
 
 
 $color-white: #fff;
@@ -19,8 +20,8 @@ $color-gray: #565f69;
 
 $color-linkedin:#0077ba;
 $color-github:#2b3137;
-$color-email:#6FC2B0;
-$color-resume:#aaa9ad;
+$color-email:#e53332;
+$color-resume:#363636;
 $color-footer: #171a1d;
 $color-scroll: #e53332;
 
@@ -39,6 +40,7 @@ $gutter-horizontal: 6rem;
 $cubic-bezier-primary: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
 //<-------------Layers--------------->
-$layer-nav:900;
-$layer-burger:1000;
+$layer-nav:800;
+$layer-burger:900;
 $layer-contact:700;
+$layer-modal: 1000;

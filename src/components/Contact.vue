@@ -13,16 +13,18 @@
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
       </li>
-      <li class="contact__item">
-        <a href="" target="_blank" class="contact__link contact__link-resume">
-          <span class="contact__label">Resume</span>
-          <font-awesome-icon :icon="['fas', 'portrait']" />
-        </a>
-      </li>
+
       <li class="contact__item">
         <a href="" target="_blank" class="contact__link contact__link-email">
           <span class="contact__label">Email</span>
           <font-awesome-icon :icon="['far', 'envelope']" />
+        </a>
+      </li>
+
+      <li class="contact__item">
+        <a href="" target="_blank" class="contact__link contact__link-resume">
+          <span class="contact__label">Resume</span>
+          <font-awesome-icon :icon="['fas', 'portrait']" />
         </a>
       </li>
     </ul>
@@ -75,7 +77,7 @@ export default {};
     }
 
     &-resume {
-      background-color: $color-gray;
+      background-color: $color-resume;
     }
 
     &-email {
