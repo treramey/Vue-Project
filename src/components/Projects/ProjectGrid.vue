@@ -34,8 +34,8 @@
                         {{ project.summary }}
                     </p>
                     <div class="project__buttonContainer">
-                        <a href="project.demo" class="project__modalButton "><font-awesome-icon icon="eye" /> Demo</a>
-                        <a href="project.code" class="project__modalButton "><font-awesome-icon icon="code" /> Code</a>
+                        <a :href="project.demo" class="project__modalButton " target="_blank" ><font-awesome-icon icon="eye" /> Demo</a>
+                        <a :href="project.code" class="project__modalButton " target="_blank" ><font-awesome-icon icon="code" /> Code</a>
                     </div>
                 </div>
             </div>
@@ -78,6 +78,7 @@ export default {
         opacity: 1;
         transition: all 300ms ease-out;
         visibility: visible;
+        max-width: 50vh;
 
         &__item 
         {

@@ -30,9 +30,9 @@ export default {
         height: 4.5rem;
         line-height: 1;
         font-size: 2.5rem;
-        border:2px solid $color-white;
-        background-color: $color-white;
-        color:$color-secondary;
+        border:2px solid $color-button;
+        background-color: $color-button;
+        color:$color-white;
         font-family: $font-primary;
         border-radius: 6px;
     }
@@ -40,7 +40,7 @@ export default {
     &__bottom{
         margin-top: 1rem;
         background-color: $color-secondary;
-        color:#e53332;
+        color:$color-white;
     }
 
     &:hover * {
