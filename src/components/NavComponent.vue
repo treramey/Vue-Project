@@ -10,19 +10,19 @@
     <nav class="navigation__nav">
       <ul class="navigation__list">
         <li class="navigation__item" @click="navActive= false">
-          <router-link to="/about" class="navigation__link">
+          <router-link to="/about" class="navigation__link" v-bind:class="{ 'navigation__colorNav': $route.path == '/about' }">
             <span>about</span>
           </router-link>
         </li>
 
-        <li class="navigation__item" @click="navActive= false">
-          <router-link to="/portfolio" class="navigation__link">
+        <li class="navigation__item"  @click="navActive= false">
+          <router-link to="/portfolio" class="navigation__link" v-bind:class="{ 'navigation__colorNav': $route.path == '/portfolio' }">
             <span>portfolio</span>
           </router-link>
         </li>
 
         <li class="navigation__item" @click="navActive= false">
-          <router-link to="/portfolio" class="navigation__link">
+          <router-link to="/portfolio" class="navigation__link" v-bind:class="{ 'navigation__colorNav': $route.path == '/contact' }">
             <span>contact</span>
           </router-link>
         </li>
@@ -35,7 +35,8 @@
 export default {
   data() {
     return {
-      navActive: false
+      navActive: false,
+
     };
   }
 };
@@ -203,5 +204,8 @@ export default {
       }
     }
   }
+  &__colorNav{
+        color: $color-text-nav-light !important;
+      }
 }
 </style>
