@@ -23,7 +23,7 @@ export default {
         }
         @media only screen and (max-width: 44.375em)
         {
-            font-size: 5rem;
+            font-size: 6rem;
             margin-bottom: 1rem;
         }
         @media only screen and (max-width: 31.25em)

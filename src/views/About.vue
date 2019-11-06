@@ -26,10 +26,6 @@ components:{ AboutButton, AboutSubHeader, AboutHeader}
         {
           width: 85%;
         }
-        @media only screen and (max-width: 44.375em)
-        {
-          width: 75%;
-        }
     }
 
 </style>

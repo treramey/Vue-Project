@@ -2,27 +2,39 @@
   <div class="footerContact">
     <ul class="footerContact__list">
       <li class="footerContact__item">
-        <a href="https://www.linkedin.com/in/treramey/" target="_blank" class="footerContact__link footerContact__link-linkedin">
+        <a
+          href="https://www.linkedin.com/in/treramey/"
+          target="_blank"
+          class="footerContact__link footerContact__link-linkedin"
+        >
           <span class="footerContact__label">Linkedin</span>
           <font-awesome-icon :icon="['fab', 'linkedin']" />
         </a>
       </li>
       <li class="footerContact__item">
-        <a href="https://github.com/treramey" target="_blank" class="footerContact__link footerContact__link-github">
+        <a
+          href="https://github.com/treramey"
+          target="_blank"
+          class="footerContact__link footerContact__link-github"
+        >
           <span class="footerContact__label">Github</span>
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
       </li>
 
       <li class="footerContact__item">
-        <a href="mailto:treramey@gmail.com" target="_blank" class="footerContact__link footerContact__link-email">
+        <a
+          href="mailto:treramey@gmail.com"
+          target="_blank"
+          class="footerContact__link footerContact__link-email"
+        >
           <span class="footerContact__label">Email</span>
           <font-awesome-icon :icon="['far', 'envelope']" />
         </a>
       </li>
 
       <li class="footerContact__item">
-        <a href="" target="_blank" class="footerContact__link footerContact__link-resume">
+        <a href target="_blank" class="footerContact__link footerContact__link-resume">
           <span class="footerContact__label">Resume</span>
           <font-awesome-icon :icon="['fas', 'portrait']" />
         </a>
@@ -37,23 +49,21 @@ export default {};
 
 <style lang="scss">
 .footerContact {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
   @media screen and (max-width: 768px) {
     visibility: visible;
-}
+  }
 
   &__list {
     list-style: none;
     display: table;
     width: 100%;
-
   }
-  &__item{
+  &__item {
     display: table-cell;
-    
   }
 
   &__link {
@@ -61,7 +71,7 @@ export default {};
     &:link {
       display: flex;
       justify-content: center;
-      align-items:center;
+      align-items: center;
       color: $color-white;
       font-size: 1.5rem;
       padding: 2rem;
@@ -94,9 +104,6 @@ export default {};
   &__label {
     margin-right: 2px;
     letter-spacing: 1px;
-    
   }
-
 }
-
 </style>

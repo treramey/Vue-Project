@@ -63,9 +63,6 @@ export default {};
       padding: 1.2rem;
       transition: all 450ms $cubic-bezier-primary;
       text-decoration: none;
-      @media only screen and (max-width: 31.25em) {
-        padding: 1rem;
-      }
       @media only screen and (min-width: 100em) {
         padding: 1.5rem;
         font-size: 2.8rem;

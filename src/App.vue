@@ -27,7 +27,7 @@ export default {
   width: 100%;
 }
 .hero {
-  margin: 7em auto;
+  margin: 6em auto;
   padding: 1.5rem;
 }
 

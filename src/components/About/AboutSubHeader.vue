@@ -47,7 +47,8 @@ export default {
   display: block;
   @media only screen and (max-width: 44.375em)
   {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
   }
 
   &__word {
@@ -69,10 +70,6 @@ export default {
     }
     &--active * {
       transform: translateY(-4rem);
-      @media only screen and (max-width: 44.375em)
-      {
-        transform: translateY(-3rem);
-      }
     }
     &--active &__bottom {
       visibility: visible;
