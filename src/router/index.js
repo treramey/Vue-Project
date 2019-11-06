@@ -18,7 +18,12 @@ const routes = [
     path: '/portfolio',
     name: 'portfolio',
     component: () => import(/* webpackChunkName: "portfolio" */ '../views/Portfolio.vue')
-  }
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import(/* webpackChunkName: "portfolio" */ '../views/Contact.vue')
+  },
 ]
 
 const router = new VueRouter({

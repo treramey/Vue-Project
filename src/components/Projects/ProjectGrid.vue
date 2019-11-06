@@ -349,7 +349,7 @@ export default {
             letter-spacing: 1px;
             border-width: 1px 1px 2px 1px;
             border-style: solid;
-            background-color: #c60301;
+            background-color: $color-button;
             border-color: #222; 
             border-radius: 3px;
             box-shadow: 1px 1px 0 rgba(0,0,0,.25);

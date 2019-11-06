@@ -1,11 +1,14 @@
 <template>
   <div id="app">
+    <div class="hero">
     <NavComponent />
     
     <contact />
     <router-view />
+    </div>
     <Footer/>
   </div>
+  
 </template>
 <script>
 import NavComponent from "./components/NavComponent";
@@ -18,6 +21,11 @@ export default {
 };
 </script>
 <style lang="scss">
+
+.hero{
+  margin: 7em auto;
+}
+
 #app {
   position: absolute;
   min-height: 100vh;

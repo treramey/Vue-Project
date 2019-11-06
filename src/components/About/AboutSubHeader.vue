@@ -53,13 +53,12 @@ export default {
   &__word {
     display: inline-block;
     vertical-align: top;
-    margin: 0 0.5rem;
     height: 3.9rem;
     overflow: hidden;
     @media only screen and (max-width: 44.375em)
     {
       height: 2.5rem;
-      margin: 0 0.3rem;
+      
     }
 
     * {
@@ -80,11 +79,12 @@ export default {
     }
   }
   &__top {
-    margin-bottom: 1.05rem;
+    margin-bottom: 1.01rem;
   }
   &__bottom {
     color: #22262a;
     background-color: $color-white;
+    padding: 5px;
   }
 }
 </style>

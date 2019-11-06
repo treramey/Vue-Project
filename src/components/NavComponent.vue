@@ -22,7 +22,7 @@
         </li>
 
         <li class="navigation__item" @click="navActive= false">
-          <router-link to="/portfolio" class="navigation__link" v-bind:class="{ 'navigation__colorNav': $route.path == '/contact' }">
+          <router-link to="/contact" class="navigation__link" v-bind:class="{ 'navigation__colorNav': $route.path == '/contact' }">
             <span>contact</span>
           </router-link>
         </li>
