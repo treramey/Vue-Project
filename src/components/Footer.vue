@@ -22,7 +22,10 @@ export default {};
   color: $color-white;
   font-size: 1.6rem;
   font-family: $font-secondary;
-  user-select: text;  
+  user-select: text; 
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  } 
 
   &__item {
     display: flex;

@@ -1,38 +1,41 @@
 <template>
   <div id="app">
     <div class="hero">
-    <NavComponent />
-    
-    <contact />
-    <router-view />
+      <NavComponent />
+      <contact />
+      <router-view />
     </div>
-    <Footer/>
+    <ContactFooter class="ConfootWrapper"/>
+    <Footer />
   </div>
-  
 </template>
 <script>
 import NavComponent from "./components/NavComponent";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import ContactFooter from './components/ContactFooter'
 
 export default {
-  components: { NavComponent, Contact, Footer }
+  components: { NavComponent, Contact, Footer, ContactFooter }
 };
 </script>
 <style lang="scss">
 
-.hero{
+.ConfootWrapper{
+  position: absolute;
+  bottom: 6px;
+  width: 100%;
+}
+.hero {
   margin: 7em auto;
+  padding: 1.5rem;
 }
 
 #app {
   position: absolute;
   min-height: 100vh;
   min-width: 100vw;
-  padding: 1.5rem;
   background-color: $color-secondary;
   user-select: none;
-  
 }
 </style>

@@ -9,14 +9,7 @@
         <input id="name" name="name" placeholder="what your mom calls you..." type="text" required />
       </div>
       <div class="gform__styledInput gform__styledInput--flexOne">
-        <input
-          id="email"
-          name="email"
-          type="email"
-          value
-          required
-          placeholder=" your email"
-        />
+        <input id="email" name="email" type="email" value required placeholder=" your email" />
       </div>
       <div class="gform__styledInput">
         <textarea
@@ -38,10 +31,10 @@ export default {};
 
 <style lang="scss">
 .gform {
-    font-family: $font-secondary;
-    opacity: 1;
-    visibility: visible;
-    transition: all 300ms ease-out;
+  font-family: $font-secondary;
+  opacity: 1;
+  visibility: visible;
+  transition: all 300ms ease-out;
 
   &__inputContainer {
     display: flex;

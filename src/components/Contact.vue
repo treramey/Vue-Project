@@ -42,6 +42,10 @@ export default {};
   left: -7rem;
   transform: translateY(-50%);
   z-index: $layer-contact;
+  visibility: visible;
+  @media screen and (max-width: 768px) {
+    visibility: hidden;
+  }
   @media only screen and (min-width: 100em) {
     left: -12.5rem;
   }
