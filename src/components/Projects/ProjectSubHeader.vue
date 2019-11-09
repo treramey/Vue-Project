@@ -13,7 +13,7 @@ export default {
 <style lang="scss">
     .sub-header{
         font-family: $font-secondary;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         color: $color-primary-text;
         display: inline-block;
         margin: 1.2rem 0;

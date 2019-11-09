@@ -8,7 +8,7 @@ $color-secondary: #272727;
 
 
 //<-------------text color's--------------->
-$color-primary-text:#8796a5;;
+$color-primary-text:#cacaca;;
 $color-text-nav:#636364;;
 $color-text-nav-light:#9f9f9f;
 $color-button: #e53332;
@@ -28,8 +28,9 @@ $color-scroll: #e53332;
 
 
 //<-------------fonts--------------->
-$font-primary: Staatliches, sans-serif;
-$font-secondary: Inconsolata, sans-serif;
+$font-primary: 'Staatliches', sans-serif;
+$font-secondary: 'Inconsolata', sans-serif;
+$font-third: 'Lato', sans-serif;
 
 //<-------------Grid--------------->
 $grid-width: 100%;

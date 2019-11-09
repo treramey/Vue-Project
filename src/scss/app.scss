@@ -1,7 +1,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 // Abstracts
 @import 'abstracts/variables',
@@ -9,4 +9,5 @@
 
 // Base
 @import 'base/base',
-        'base/typography';
+        'base/typography',
+        'base/vuesweetalert';

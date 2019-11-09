@@ -100,7 +100,7 @@ export default {
   }
 
   &__checkbox:checked + &__button &__line {
-    background-color: $color-white;
+    background-color: $color-text-nav-light;
     transition: all 300ms $cubic-bezier-primary, background-color 300ms ease-out;
   }
 
@@ -167,6 +167,7 @@ export default {
       padding: 4.5rem 0;
       text-align: center;
       font-size: 3.5rem;
+      letter-spacing: 1px;
       text-decoration: none;
       color: $color-text-nav;
       text-transform: uppercase;

@@ -8,9 +8,12 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import VScrollLock from 'v-scroll-lock'
+import VueSweetalert2 from 'vue-sweetalert2';
+
 
 library.add(fas, fab,far)
 Vue.use(VScrollLock)
+Vue.use(VueSweetalert2)
 
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

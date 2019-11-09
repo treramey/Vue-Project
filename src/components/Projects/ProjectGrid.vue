@@ -14,7 +14,7 @@
     <div v-if="open" class="project__background" :class="{'project__background--show': openModal}">
       <div v-scroll-lock="open" class="project__modal" :class="{'project__modal--show': openModal}">
         <button class="project__close" @click="closeModal">
-          <font-awesome-icon icon="times" />
+          <font-awesome-icon icon="times" class="project__close--times" />
         </button>
 
         <div class="project__left">
@@ -219,6 +219,10 @@ export default {
     font-size: 3rem;
     cursor: pointer;
     transition: all 200ms $cubic-bezier-primary;
+    
+    &--times{
+      -webkit-filter: drop-shadow(0px 0px 1px #000);
+    }
 
     &:hover {
       transform: scale(1.2);
