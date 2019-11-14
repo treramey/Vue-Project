@@ -10,9 +10,8 @@
         </div>
       </a>
     </div>
-
-    <div v-if="open" class="project__background" :class="{'project__background--show': openModal}">
-      <div v-scroll-lock="open" class="project__modal" :class="{'project__modal--show': openModal}">
+    <div class="project__background" :class="{'project__background--show': showProject}">  
+      <div v-scroll-lock="showProject" class="project__modal" :class="{'project__modal--show': showProject}">
         <button class="project__close" @click="closeModal">
           <font-awesome-icon icon="times" class="project__close--times" />
         </button>
@@ -55,15 +54,15 @@ export default {
 
   data() {
     return {
-      open: false
+      showProject: false
     };
   },
   methods: {
     openModal() {
-      this.open = true;
+      this.showProject = true;
     },
     closeModal() {
-      this.open = false;
+      this.showProject = false;
     }
   }
 };
@@ -79,7 +78,6 @@ export default {
   opacity: 1;
   transition: all 300ms ease-out;
   visibility: visible;
-  max-width: 50vh;
 
   &__item {
     position: relative;
@@ -150,8 +148,7 @@ export default {
     width: 100%;
     color: $color-white;
 
-    @media only screen and (max-width: 31.25em) {
-      font-size: 1.6rem;
+    @media only screen and (max-width: 31.25em){
     }
 
     svg {
@@ -169,7 +166,7 @@ export default {
     background-color: rgba($color-black, 0.3);
     opacity: 0;
     visibility: hidden;
-    transition: all 400ms $cubic-bezier-primary;
+    transition: all 300ms $cubic-bezier-primary;
 
     &--show {
       opacity: 1;
@@ -185,15 +182,14 @@ export default {
     user-select: text;
     box-shadow: 0px 0px 11px #121212;
     border-radius: 5px;
-    overflow: hidden;
     opacity: 0;
-    transition: all 300ms 100ms $cubic-bezier-primary;
-    transform: translate(-50%, -50%) scale(0.25);
-
-    &--show {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
+    transition: all 300ms 200ms $cubic-bezier-primary ;
+    transform: translate(-50%, -50%) scale(.25);
+    &--show 
+      { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
 
     @media only screen and (max-width: 76em) {
       width: 95%;
@@ -230,7 +226,7 @@ export default {
   }
 
   &__left {
-    width: 60rem;
+    width:75rem;
     height: 100%;
     display: inline-block;
 
@@ -244,7 +240,7 @@ export default {
   }
 
   &__right {
-    width: calc(100% - 60.5rem);
+    width: calc(100% - 75.5rem);
     display: inline-block;
     vertical-align: top;
     padding: 1.5rem;
@@ -329,6 +325,11 @@ export default {
     cursor: pointer;
     transition: all 200ms;
     position: relative;
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+    }
   }
 
   &__buttonContainer {

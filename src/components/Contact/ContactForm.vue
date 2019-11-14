@@ -7,10 +7,23 @@
   >
     <div class="gform__inputContainer form-elements">
       <fieldset class="gform__styledInput">
-        <input id="name" name="name" placeholder="what your mom calls you..." type="text" required />
+        <input
+          id="name"
+          name="name"
+          placeholder="what your mom calls you..."
+          type="text"
+          required
+        />
       </fieldset>
       <fieldset class="gform__styledInput gform__styledInput--flexOne">
-        <input id="email" name="email" type="email" value required placeholder=" email@address.com" />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          value
+          required
+          placeholder=" email@address.com"
+        />
       </fieldset>
       <fieldset class="gform__styledInput">
         <textarea
@@ -22,9 +35,11 @@
         ></textarea>
       </fieldset>
       <fieldset class="honeypot-field">
-        <label
-          for="honeypot"
-        >To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <label for="honeypot"
+          >To help avoid spam, utilize a Honeypot technique with a hidden text
+          field; must be empty to submit the form! Otherwise, we assume the user
+          is a spam bot.</label
+        >
         <input id="honeypot" type="text" name="honeypot" value />
       </fieldset>
     </div>
@@ -33,18 +48,13 @@
     </button>
 
     <div class="thankyou_message" style="display:none;">
-      <h2>
-        <em>Thanks</em> for contacting us!
-        We will get back to you soon!
-      </h2>
+      <h2><em>Thanks</em> for contacting us! We will get back to you soon!</h2>
     </div>
   </form>
 </template>
 
 <script>
-
 export default {
-  
   methods: {
     onSubmit: function handleFormSubmit(event) {
       // handles form submit without any jquery
@@ -58,7 +68,11 @@ export default {
         return false;
       }
 
-      this.$swal("Thank you for getting in touch!", "I'll make sure to contact you as soon as possible!", "success")
+      this.$swal(
+        "Thank you for getting in touch!",
+        "I'll make sure to contact you as soon as possible!",
+        "success"
+      );
       this.disableAllButtons(form);
       var url = form.action;
       var xhr = new XMLHttpRequest();
@@ -171,7 +185,6 @@ export default {
     &--flexOne {
       flex: 1;
     }
-   
 
     input,
     textarea {
@@ -201,6 +214,10 @@ export default {
       width: 100%;
       max-height: 15em;
     }
+    input:required:focus {
+      border: 1px solid red;
+      outline: none;
+    }
   }
 
   &__Btn {
@@ -223,8 +240,6 @@ export default {
     transition: all 200ms;
     position: relative;
     font-family: $font-primary;
-
-    transition: all 300ms ease;
 
     &:hover {
       transform: translateY(2px);

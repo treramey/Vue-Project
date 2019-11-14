@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <Preloader v-if="isLoading"></Preloader> -->
     <div class="hero">
       <NavComponent />
       <contact />
@@ -14,16 +15,27 @@ import NavComponent from "./components/NavComponent";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ContactFooter from './components/ContactFooter'
+// import Preloader from './components/Preloader'
 
 export default {
-  components: { NavComponent, Contact, Footer, ContactFooter }
+  components: { NavComponent, Contact, Footer, ContactFooter },
+  // data() {
+  //   return {
+  //     isLoading: true
+  //   };
+  // },
+  // mounted() {
+  //   setTimeout(() => {
+  //     this.isLoading = false;
+  //   }, 3000);
+  // }
 };
 </script>
 <style lang="scss">
 
 .ConfootWrapper{
   position: absolute;
-  bottom: 6px;
+  bottom: 3px;
   width: 100%;
 }
 .hero {
@@ -37,5 +49,8 @@ export default {
   min-width: 100vw;
   background-color: $color-secondary;
   user-select: none;
+  @media (max-width: 400px) {
+          min-height: none;
+        }
 }
 </style>

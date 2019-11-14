@@ -40,13 +40,13 @@ export default {
           max-width:100%;
           text-align:center;
         }
-    }
-  
-  .slide-top
+    .slide-top
       {
           opacity: 0;
           visibility: hidden;
           transform: translateY(-5rem)
       }
+  }
+  
 
 </style>

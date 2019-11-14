@@ -14,17 +14,20 @@ export default {};
 <style lang="scss">
 .footer {
   position: absolute;
-  bottom: -7.5rem;
+  bottom: -6.9rem;
   left: 0;
   width: 100%;
+  height: auto;
   padding: 3rem;
   background: $color-primary;
   color: $color-white;
   font-size: 1.6rem;
   font-family: $font-secondary;
   user-select: text; 
+  border-top: 1px solid $color-primary-dark-2;
   @media screen and (max-width: 768px) {
     padding: 2rem;
+    bottom: -7.9rem;
   } 
 
   &__item {

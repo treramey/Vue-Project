@@ -30,6 +30,10 @@ export default {
         {
             span {display: block;}
         }
+
+        opacity: 1;
+        visibility: visible;
+        transition: all 300ms ease-out;
     }
 
 </style>
