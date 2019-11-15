@@ -2,7 +2,7 @@
   <div class="project">
     <div class="project__item">
       <a class="project__link" @click="openModal">
-        <img class="project__img" :src="'/img/' + project.img" alt="Project Image" />
+        <img class="project__img" :src="'/img/' + project.imgCard" alt="Project Image" />
         <div class="project__overlay">
           <div class="project__buttons">
             <div class="project__button">View Project</div>
@@ -182,6 +182,7 @@ export default {
     user-select: text;
     box-shadow: 0px 0px 11px #121212;
     border-radius: 5px;
+    overflow: hidden;
     opacity: 0;
     transition: all 300ms 200ms $cubic-bezier-primary ;
     transform: translate(-50%, -50%) scale(.25);
@@ -344,7 +345,6 @@ export default {
     width: 100%;
     height: 100%;
     justify-content: center;
-    margin-top: 4rem;
   }
 }
 </style>
