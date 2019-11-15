@@ -45,6 +45,9 @@ export default {
   line-height: 1;
   font-size: 3rem;
   display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: all 300ms ease-out;
   @media only screen and (max-width: 44.375em)
   {
     font-size: 2.5rem;

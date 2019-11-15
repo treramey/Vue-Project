@@ -16,6 +16,9 @@ export default {
         font-size: 10rem;
         color:$color-white;
         letter-spacing: 4px;
+        opacity: 1;
+        visibility: visible;
+        transition: all 300ms ease-out;
 
         @media only screen and (max-width: 62.5em)
         {

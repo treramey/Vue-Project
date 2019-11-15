@@ -21,6 +21,9 @@ export default {
     width:16rem;
     text-decoration: none;
     overflow: hidden;
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms ease-out;
     @media screen and (max-width: 768px) {
     margin-top:4rem;
   }

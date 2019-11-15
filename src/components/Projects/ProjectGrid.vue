@@ -229,6 +229,7 @@ export default {
     width:75rem;
     height: 100%;
     display: inline-block;
+    box-shadow: 5px 0px 11px -2px #121212;
 
     @media only screen and (max-width: 56.25em) {
       width: 55%;
@@ -243,7 +244,7 @@ export default {
     width: calc(100% - 75.5rem);
     display: inline-block;
     vertical-align: top;
-    padding: 1.5rem;
+    padding: 2.5rem;
     color: $color-white;
 
     @media only screen and (max-width: 56.25em) {
@@ -287,6 +288,12 @@ export default {
     border-radius: 3px;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
     position: relative;
+    transition: all 200ms;
+    &:hover {
+      transform: translateY(2px);
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+    }
   }
   &__break {
     display: block;

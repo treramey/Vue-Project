@@ -1,8 +1,8 @@
 <template>
     <main class="about">
-        <AboutHeader ><span>Hello, I'm </span><span>Trevor Ramey</span>  </AboutHeader>
-        <AboutSubHeader  :text="'I\'m a software developer and designer. Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn.'"/>
-        <AboutButton>View Projects</AboutButton>
+        <AboutHeader :class="{'slide-top':loading}" ><span>Hello, I'm </span><span>Trevor Ramey</span>  </AboutHeader>
+        <AboutSubHeader :class="{'slide-bottom':loading}" :text="'I\'m a software developer and designer. Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn.'"/>
+        <AboutButton :class="{'slide-bottom':loading}">View Projects</AboutButton>
     </main>
 </template>
 
@@ -11,7 +11,17 @@ import AboutHeader from '../components/About/AboutHeader'
 import AboutSubHeader from '../components/About/AboutSubHeader'
 import AboutButton from '../components/About/AboutButton'
 export default {
-components:{ AboutButton, AboutSubHeader, AboutHeader}
+components:{ AboutButton, AboutSubHeader, AboutHeader},
+data(){return{
+        loading: true
+    }},
+    mounted()
+    {
+        setTimeout(() => 
+        {
+            this.loading = false
+        }, 400)
+    }
 
 }
 </script>
@@ -33,6 +43,12 @@ components:{ AboutButton, AboutSubHeader, AboutHeader}
           opacity: 0;
           visibility: hidden;
           transform: translateY(-5rem)
+      }
+      .slide-bottom
+      {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(5rem)
       }
     }
 
