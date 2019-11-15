@@ -20,7 +20,7 @@ data(){return{
         setTimeout(() => 
         {
             this.loading = false
-        }, 400)
+        }, 200)
     }
 
 }
