@@ -44,7 +44,7 @@ export default {
     
     &__bottom{
         margin-top: 1rem;
-        background-color: $color-secondary;
+        background-color: transparent;
         color:$color-white;
     }
 
