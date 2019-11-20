@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    // for testing
     // methods: {
     //         showAlert() {
     //             // Use sweetalert2
@@ -23,9 +24,10 @@ export default {
         margin-top: 2rem;
         font-size:5rem;
         color:$color-white;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         user-select: text;
         text-shadow: 2px 2px 0 rgba(0,0,0,.15);
+        font-weight: bold;
 
 
         opacity: 1;

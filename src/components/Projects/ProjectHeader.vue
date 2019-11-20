@@ -15,8 +15,9 @@ export default {
         margin-top: 2rem;
         font-size:5rem;
         color:$color-white;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         user-select: text;
+        font-weight: bold;
 
 
         opacity: 1;

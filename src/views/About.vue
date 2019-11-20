@@ -37,6 +37,10 @@ data(){return{
         {
           width: 85%;
         }
+        @media only screen and (max-width: 31.25em)
+        {
+            width: 100%;
+        }
 
         .slide-top
       {

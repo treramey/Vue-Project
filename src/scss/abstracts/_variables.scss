@@ -9,8 +9,12 @@ $color-secondary: #212121;//#272727
 
 //<-------------text color's--------------->
 $color-primary-text:#cacaca;;
-$color-text-nav:#636364;;
+$color-text-nav:#5a5a5a;;
 $color-text-nav-light:#9f9f9f;
+$color-text-nav-hover:#7F7F7F;
+$color-nav:#121212;
+$color-nav-link:#1e1e1e;
+$color-nav-link-hover:#272727;
 $color-button: #e53332;
 
 
@@ -30,7 +34,7 @@ $color-scroll: #e53332;
 //<-------------fonts--------------->
 $font-primary: 'Staatliches', sans-serif;
 $font-secondary: 'Inconsolata', sans-serif;
-$font-third: 'Lato', sans-serif;
+$font-third: 'Montserrat',Tahoma,Arial,sans-serif;
 
 //<-------------Grid--------------->
 $grid-width: 100%;

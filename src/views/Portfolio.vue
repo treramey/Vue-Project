@@ -3,7 +3,7 @@
     <div class="wrapper">
       <ProjectHeader :class="{ 'slide-top': loading }">Portfolio</ProjectHeader>
       <ProjectSubHeader :class="{ 'slide-top': loading }"
-        >Have a look at some of my latest work!</ProjectSubHeader
+        >Check out my latest web software development portfolio projects!</ProjectSubHeader
       >
       <ProjectsComponent></ProjectsComponent>
     </div>

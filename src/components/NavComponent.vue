@@ -54,7 +54,7 @@ export default {
     top: 3rem;
     right: 3rem;
     z-index: $layer-burger;
-    width: 4.1rem;
+    width: 4.05rem;
     cursor: pointer;
     @media only screen and (min-width: 1600px) {
       width: 4.6rem;
@@ -65,7 +65,7 @@ export default {
     display: inline-block;
     width: 100%;
     height: 2px;
-    background-color: $color-primary-text;
+    background-color: $color-white;
     transition: all 300ms $cubic-bezier-primary, background-color 300ms ease-in;
     vertical-align: middle;
     margin: auto;
@@ -128,7 +128,7 @@ export default {
     z-index: $layer-nav;
     top: 0;
     left: 0;
-    background: $color-primary;
+    background: $color-nav;
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -167,12 +167,12 @@ export default {
       padding: 4.5rem 0;
       text-align: center;
       font-size: 3.5rem;
-      letter-spacing: 1px;
       text-decoration: none;
       color: $color-text-nav;
-      text-transform: uppercase;
       position: relative;
-      background: $color-primary-dark;
+      background: $color-nav-link;
+      font-family: $font-third; 
+      font-weight: 700;
     }
 
     span {
@@ -186,7 +186,7 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $color-primary-dark-2;
+      background-color: $color-nav-link-hover;
       transform: scaleX(0);
       transition: all 300ms ease-out;
     }
@@ -196,7 +196,7 @@ export default {
     &:active,
     &:focus {
       text-decoration: none;
-      color: $color-text-nav-light;
+      color: $color-text-nav-hover;
 
       &:before {
         transition: all 300ms $cubic-bezier-primary;

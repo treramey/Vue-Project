@@ -1,6 +1,7 @@
 <template>
   <sub class="sub-header">
       <slot></slot>
+      
   </sub>
 </template>
 

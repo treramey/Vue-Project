@@ -3,7 +3,7 @@
         <div class="wrapper">
           <ContactHeader :class="{'slide-top':loading}">Get in touch</ContactHeader> 
           <ContactSubHeader :class="{'slide-top':loading}">
-            If you wanna get in touch, talk to me about a project collaboration or just say hi. Fill up the awesome form below or send an email me@treramey.dev and ~let's talk. 
+            If you wanna get in touch, talk to me about a project collaboration or just say hi. Fill up the awesome form below or send an email hello@treramey.dev and let's talk. 
           </ContactSubHeader>
           <ContactComponent/>
         </div>

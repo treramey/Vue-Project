@@ -20,5 +20,13 @@ module.exports = {
         path.resolve(__dirname, 'src/scss/abstracts/*.scss'),
       ]
     }
-  }
+  },
+  chainWebpack: config => {
+		config.module
+			.rule('glsl')
+			.test(/\.glsl$/)
+			.use('navinfo-webpack-glsl-loader')
+			.loader('navinfo-webpack-glsl-loader')
+			.end()
+	}
 }

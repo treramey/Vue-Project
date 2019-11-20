@@ -10,7 +10,7 @@
         <input
           id="name"
           name="name"
-          placeholder="what your mom calls you..."
+          placeholder="What your mom calls you..."
           type="text"
           required
         />

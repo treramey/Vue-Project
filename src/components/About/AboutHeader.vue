@@ -32,6 +32,7 @@ export default {
         @media only screen and (max-width: 31.25em)
         {
             span {display: block;}
+            letter-spacing: none;
         }
 
         opacity: 1;
