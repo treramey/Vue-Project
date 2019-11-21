@@ -2,7 +2,11 @@
   <div class="project">
     <div class="project__item">
       <a class="project__link" @click="openModal">
-        <img class="project__img" :src="'/img/' + project.imgCard" alt="Project Image" />
+        <img
+          class="project__img"
+          :src="'/img/' + project.imgCard"
+          alt="Project Image"
+        />
         <div class="project__overlay">
           <div class="project__buttons">
             <div class="project__button">View Project</div>
@@ -10,14 +14,25 @@
         </div>
       </a>
     </div>
-    <div class="project__background" :class="{'project__background--show': showProject}">  
-      <div v-scroll-lock="showProject" class="project__modal" :class="{'project__modal--show': showProject}">
+    <div
+      class="project__background"
+      :class="{ 'project__background--show': showProject }"
+    >
+      <div
+        v-scroll-lock="showProject"
+        class="project__modal"
+        :class="{ 'project__modal--show': showProject }"
+      >
         <button class="project__close" @click="closeModal">
           <font-awesome-icon icon="times" class="project__close--times" />
         </button>
 
         <div class="project__left">
-          <img class="project__img--modal" :src="'/img/' + project.img" alt="Project Image" />
+          <img
+            class="project__img--modal"
+            :src="'/img/' + project.img"
+            alt="Project Image"
+          />
         </div>
         <div class="project__right">
           <h3 class="project__name">{{ project.name }}</h3>
@@ -28,17 +43,27 @@
               class="project__technology"
               v-for="(technology, index) in project.technologies"
               :key="index"
-            >{{ technology.name }}</li>
+            >
+              {{ technology.name }}
+            </li>
           </ul>
           <div class="project__label">About</div>
           <div class="project__break"></div>
           <p class="project__summary">{{ project.summary }}</p>
           <div class="project__buttonContainer">
-            <a :href="project.demo" class="project__modalButton " target="_blank">
-              <font-awesome-icon icon="external-link-alt" class="fa-fw"/> Demo
+            <a
+              :href="project.demo"
+              class="project__modalButton "
+              target="_blank"
+            >
+              <font-awesome-icon icon="external-link-alt" class="fa-fw" /> Demo
             </a>
-            <a :href="project.code" class="project__modalButton" target="_blank">
-              <font-awesome-icon icon="code" class="fa-fw"/> Code
+            <a
+              :href="project.code"
+              class="project__modalButton"
+              target="_blank"
+            >
+              <font-awesome-icon icon="code" class="fa-fw" /> Code
             </a>
           </div>
         </div>
@@ -148,7 +173,7 @@ export default {
     width: 100%;
     color: $color-white;
 
-    @media only screen and (max-width: 31.25em){
+    @media only screen and (max-width: 31.25em) {
     }
 
     svg {
@@ -184,13 +209,12 @@ export default {
     border-radius: 5px;
     overflow: hidden;
     opacity: 0;
-    transition: all 300ms 200ms $cubic-bezier-primary ;
-    transform: translate(-50%, -50%) scale(.25);
-    &--show 
-      { 
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 1;
-      }
+    transition: all 300ms 200ms $cubic-bezier-primary;
+    transform: translate(-50%, -50%) scale(0.25);
+    &--show {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
 
     @media only screen and (max-width: 76em) {
       width: 95%;
@@ -202,7 +226,8 @@ export default {
       overflow: auto;
     }
     @media only screen and (max-width: 25em) {
-      width: 38rem;
+      min-height: 85vh;
+      min-width: 100vw;
     }
   }
 
@@ -216,8 +241,8 @@ export default {
     font-size: 3rem;
     cursor: pointer;
     transition: all 200ms $cubic-bezier-primary;
-    
-    &--times{
+
+    &--times {
       -webkit-filter: drop-shadow(0px 0px 1px #000);
     }
 
@@ -227,7 +252,7 @@ export default {
   }
 
   &__left {
-    width:75rem;
+    width: 75rem;
     height: 100%;
     display: inline-block;
     box-shadow: 5px 0px 11px -2px #121212;
@@ -290,11 +315,6 @@ export default {
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
     position: relative;
     transition: all 200ms;
-    &:hover {
-      transform: translateY(2px);
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
-        0 1px 1px 0 rgba(0, 0, 0, 0.09);
-    }
   }
   &__break {
     display: block;
