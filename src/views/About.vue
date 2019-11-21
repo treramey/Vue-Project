@@ -29,7 +29,7 @@ data(){return{
 <style lang="scss">
 
     main.about{
-        @include absoluteCenter;
+        @include absoluteCenterAbout;
         width:96rem;
         text-align: center;
 
