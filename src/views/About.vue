@@ -2,7 +2,7 @@
     <main class="about">
         <AboutHeader :class="{'slide-top':loading}" ><span>Hello, I'm </span><span>Trevor Ramey</span>  </AboutHeader>
         <AboutSubHeader :class="{'slide-bottom':loading}" :text="'I\'m a software developer and designer. Follow my daily design work on Dribbble. You can also find me on Twitter, GitHub, and LinkedIn.'"/>
-        <AboutButton :class="{'slide-bottom':loading}">View Projects</AboutButton>
+        <AboutButton :class="{'slide-bottom':loading}">View Portfolio</AboutButton>
     </main>
 </template>
 

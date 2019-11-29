@@ -51,10 +51,27 @@
           <div class="project__break"></div>
           <p class="project__summary">{{ project.summary }}</p>
           <div class="project__buttonContainer">
+            <button
+              href="#"
+              class="project__modalButton"
+              v-if="project.demo == 'homePage'"
+              disabled
+            >
+              <font-awesome-icon icon="external-link-alt" /> Your on it!
+            </button>
+            <button
+              href="#"
+              class="project__modalButton"
+              v-else-if="project.demo == 'inProgress'"
+              disabled
+            >
+              <font-awesome-icon icon="external-link-alt" /> In the works
+            </button>
             <a
               :href="project.demo"
-              class="project__modalButton "
+              class="project__modalButton"
               target="_blank"
+              v-else
             >
               <font-awesome-icon icon="external-link-alt" class="fa-fw" /> Demo
             </a>
@@ -357,6 +374,13 @@ export default {
       transform: translateY(2px);
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1),
         0 1px 1px 0 rgba(0, 0, 0, 0.09);
+    }
+    &:disabled,
+    &:disabled:hover {
+      background-color: rgba($color-white, 0.4);
+      cursor: default;
+      transform: none;
+      font-family: inherit;
     }
   }
 

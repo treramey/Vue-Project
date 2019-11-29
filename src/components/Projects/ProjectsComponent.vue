@@ -41,11 +41,11 @@ export default {
             CryptoDashboard: 
             {
                 name: 'Crypto Dashboard',
-                summary: "This project was built with React, using CryptoCompare API. Designed to graph and display pricing data of crypto coins, it allows the user to save and configure their preferred currencies. Then the pricing data is graphed and presented to the user.",
+                summary: "This project is being built with React, using CryptoCompare API. Designed to graph and display pricing data of crypto coins, it allows the user to save and configure their preferred currencies. Then the pricing data is graphed and presented to the user.",
                 img: 'crypto.png',
                 imgCard: 'cryptoCard.png',
-                demo: '',
-                code: '',
+                demo: 'inProgress',
+                code: 'https://github.com/treramey/cryptodash',
                 technologies: 
                 [
                     {name: 'HTML & CSS'},
@@ -80,11 +80,11 @@ export default {
 
             portfolio: 
             {
-                name: 'portfolio',
+                name: 'My portfolio',
                 summary: "A single page application built using Vue.js and SASS with BEM methodology; this portfolio is designated as a homepage for my recent works and designs. I wanted a simple and elegant look that showed my talent and style to any visiting guests interested in my services. ",
                 img: 'portfolio.png',
                 imgCard: 'portfolioCard.png',
-                demo: '#',
+                demo: 'homePage',
                 code: 'https://github.com/treramey/Vue-Project',
                 technologies: 
                 [

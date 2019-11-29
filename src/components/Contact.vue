@@ -15,7 +15,7 @@
       </li>
 
       <li class="contact__item">
-        <a href="mailto:treramey@gmail.com" target="_blank" class="contact__link contact__link-email">
+        <a href="mailto:hello@treramey.dev" target="_blank" class="contact__link contact__link-email">
           <span class="contact__label">Email</span>
           <font-awesome-icon :icon="['far', 'envelope']" />
         </a>

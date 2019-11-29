@@ -24,7 +24,7 @@
 
       <li class="footerContact__item">
         <a
-          href="mailto:treramey@gmail.com"
+          href="mailto:hello@treramey.dev"
           target="_blank"
           class="footerContact__link footerContact__link-email"
         >
