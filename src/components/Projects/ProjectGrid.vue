@@ -112,14 +112,19 @@ export default {
 
 <style lang="scss">
 .project {
-  flex: 1 0 40%;
   border-radius: 5px;
   overflow: hidden;
-  margin: 2rem;
+  margin: 0 0 3rem 0;
   box-shadow: 5px 5px 11px #121212;
   opacity: 1;
   transition: all 300ms ease-out;
   visibility: visible;
+  max-width: 35em;
+  @media only screen and (max-width: 900px){
+     max-width: 45em;
+   }
+
+  
 
   &__item {
     position: relative;
@@ -236,6 +241,7 @@ export default {
     @media only screen and (max-width: 76em) {
       width: 95%;
       min-height: 50rem;
+      overflow: auto;
     }
     @media only screen and (max-width: 45em) {
       width: 43rem;
@@ -243,8 +249,7 @@ export default {
       overflow: auto;
     }
     @media only screen and (max-width: 25em) {
-      min-height: 85vh;
-      min-width: 100vw;
+      width: 38rem;
     }
   }
 
@@ -274,7 +279,7 @@ export default {
     display: inline-block;
     box-shadow: 5px 0px 11px -2px #121212;
 
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width: 64em) {
       width: 55%;
     }
     @media only screen and (max-width: 45em) {
@@ -290,7 +295,7 @@ export default {
     padding: 2.5rem;
     color: $color-white;
 
-    @media only screen and (max-width: 56.25em) {
+    @media only screen and (max-width:64em) {
       width: 45%;
     }
     @media only screen and (max-width: 45em) {

@@ -20,9 +20,9 @@ export default {
         visibility: visible;
         transition: all 300ms ease-out;
 
-        @media only screen and (max-width: 62.5em)
+        @media only screen and (max-width: 64em)
         {
-            font-size: 8rem
+            font-size: 7rem
         }
         @media only screen and (max-width: 44.375em)
         {

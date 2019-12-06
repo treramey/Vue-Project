@@ -33,7 +33,7 @@ data(){return{
         width:96rem;
         text-align: center;
 
-        @media only screen and (max-width: 62.5em)
+        @media only screen and (max-width: 64em)
         {
           width: 85%;
         }

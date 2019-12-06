@@ -80,7 +80,7 @@ export default {
 
             portfolio: 
             {
-                name: 'My portfolio',
+                name: 'portfolio',
                 summary: "A single page application built using Vue.js and SASS with BEM methodology; this portfolio is designated as a homepage for my recent works and designs. I wanted a simple and elegant look that showed my talent and style to any visiting guests interested in my services. ",
                 img: 'portfolio.png',
                 imgCard: 'portfolioCard.png',
@@ -114,11 +114,13 @@ export default {
   .portfolio {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    @media only screen and (max-width: 768px){
-            flex-flow: column wrap;
+    @media only screen and (max-width: 64em){
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
         }
 
   }

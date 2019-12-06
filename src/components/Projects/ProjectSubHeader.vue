@@ -17,7 +17,7 @@ export default {
         font-size: 1.8rem;
         color: $color-primary-text;
         display: inline-block;
-        margin: 1.2rem 0;
+        margin: 1.2rem 0 3rem 0;
         line-height: 1.5;
         user-select: text;
         opacity: 1;
